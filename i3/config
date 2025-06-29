@@ -186,11 +186,17 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+
+
+##COMMENTED TO USE POLYBAR
 bar {
         status_command i3status -c /home/arqes/.config/i3status/i3status.conf
 }
+
+
+
 #HERE MY THINGS
-exec_always feh --bg-fill /home/arqes/Descargas/zero-two-darling-in-3840x2160-16706.jpg
+exec_always feh --bg-fill /home/arqes/Imágenes/aesthetic-wallpapers/images/wide_tokyonight_lines.png
 #exec_always picom --backend xrender --vsync --shadow --shadow-radius 12 --shadow-offset-x -15 --shadow-offset-y -15 --shadow-opacity 0.2 --fade --fade-in-step 0.03 --fade-out-step 0.03 --fade-delta 10 --animations --animation-stiffness 250 --animation-dampening 25 --animation-for-open-window zoom --animation-for-unmap-window slide-down --animation-for-workspace-switch-in slide-left --animation-for-workspace-switch-out slide-right --corner-radius 6 --detect-rounded-corners --detect-client-opacity --experimental-backends
 #exec picom --backend xrender -f
 bindsym $mod+x exec /home/arqes/.config/scripts/lock
@@ -199,3 +205,4 @@ bindsym $mod+x exec /home/arqes/.config/scripts/lock
 for_window [class="LibreWolf"] move to workspace $ws2
 for_window [class="discord"] move to workspace $ws9
 for_window [class="konsole"] floating enable
+new_window pixel
